@@ -12,8 +12,6 @@ College uniform classification system is a deep learning-based image classificat
 
 ----------------
 
-## **key Features**
-
 ## **Key Features**
 
 1. **Binary Image Classification**:  
@@ -42,6 +40,46 @@ College uniform classification system is a deep learning-based image classificat
 
 
 -----
+
+## **Model Architecture**
+
+The model for this project is based on the **VGG16** architecture with transfer learning. The following steps describe the architecture:
+
+1. **Base Model (VGG16)**  
+   - The model uses the pre-trained **VGG16** network, which is loaded with **ImageNet** weights.  
+   - The top layers of the VGG16 model are excluded (`include_top=False`), as we are only interested in the feature extraction part of the network.  
+   - The input shape is set to `(128, 128, 3)` to match the resized images.
+
+2. **Global Average Pooling**  
+   - After the feature extraction layer, **GlobalAveragePooling2D** is used to reduce the spatial dimensions of the output, converting it into a one-dimensional vector while preserving important features.
+
+3. **Fully Connected Layers**  
+   - A **Dense** layer with 128 units and **ReLU** activation is added to introduce non-linearity and learn complex patterns.  
+   - A **Dropout** layer with a rate of 0.5 is added to reduce overfitting during training.
+
+4. **Output Layer**  
+   - The final layer is a **Dense** layer with a single unit and **Sigmoid** activation to output a binary classification result (0 for "Not Wearing Uniform", 1 for "Wearing Uniform").
+
+5. **Compilation**  
+   - The model is compiled with the **Adam** optimizer, **binary_crossentropy** loss function (as it's a binary classification task), and accuracy as the evaluation metric.
+
+### Code for Model Architecture:
+
+```python
+base_model = VGG16(weights='imagenet', include_top=False, input_shape=(128, 128, 3))
+
+model = Sequential()
+model.add(base_model)
+model.add(GlobalAveragePooling2D())
+model.add(Dense(128, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(1, activation='sigmoid'))
+
+model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+model.summary()
+
+-------------
+
 
 ## **Technologies Used**
 

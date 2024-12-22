@@ -45,8 +45,6 @@ College uniform classification system is a deep learning-based image classificat
 
 ## **Technologies Used**
 
-## **Technologies Used**
-
 1. **Python**  
    - Used for writing the core logic and scripts of the project.
 

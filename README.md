@@ -116,8 +116,6 @@ Access the application through the web browser at http://localhost:5000
 
 ## **Feature Improvements**
 
-## **Feature Improvements**
-
 1. **Classify Multiple Persons in Videos**  
    - An improvement to the current application could involve extending the functionality to classify multiple persons at once in videos. This feature would enable the system to process video frames and detect individuals wearing uniforms or not, across all frames in real-time or from pre-recorded video.  
    - This would require object detection techniques and integrating a video processing pipeline, allowing the app to analyze video streams and classify multiple persons simultaneously.

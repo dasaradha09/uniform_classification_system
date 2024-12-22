@@ -14,9 +14,36 @@ College uniform classification system is a deep learning-based image classificat
 
 ## **key Features**
 
+## **Key Features**
+
+1. **Binary Image Classification**:  
+   - Classifies images into two categories:  
+     - **Person Wearing Uniform**  
+     - **Person Not Wearing Uniform**  
+
+2. **Custom Dataset Creation**:  
+   - Collected data using Python web scraping.  
+   - Prepared a custom dataset specifically for this task.
+
+3. **Data Augmentation**:  
+   - Enhances model performance by generating diverse training samples through techniques like flipping, rotation, zooming, etc.
+
+4. **Transfer Learning**:  
+   - Leveraged the **VGG16** pre-trained model to improve accuracy and efficiency.  
+   - VGG16 is particularly effective at capturing colors and textures in images, which is crucial for this project.
+
+5. **User-Friendly Interface**:  
+   - Provides a clear and simple interface for easy interaction.
+
+6. **Flexible Input Options**:  
+   - Users can classify images by:  
+     - Uploading images from their computer.  
+     - Using a live feed from their web camera.
+
+
 -----
 
-## ** Technologies Used
+## **Technologies Used**
 
 --------
 
@@ -24,7 +51,7 @@ College uniform classification system is a deep learning-based image classificat
 
 -------
 
-## **Feature Advancements**
+## **Feature Improvements**
 
 ------
 

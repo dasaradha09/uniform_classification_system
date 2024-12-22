@@ -45,6 +45,23 @@ College uniform classification system is a deep learning-based image classificat
 
 ## **Technologies Used**
 
+## **Technologies Used**
+
+1. **Python**  
+   - Used for writing the core logic and scripts of the project.
+
+2. **NumPy**  
+   - Used for converting images into arrays for processing.
+
+3. **TensorFlow**  
+   - Utilized for:  
+     - Loading the pre-trained **VGG16** model.  
+     - Implementing data augmentation techniques.  
+     - Training the CNN model.
+
+4. **Streamlit**  
+   - Used to create a simple and interactive user interface.
+
 --------
 
 ## **Installation and usage**

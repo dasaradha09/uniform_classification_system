@@ -1,4 +1,4 @@
-# **       College uniform classification system       **
+# **College uniform classification system**
 
 
  

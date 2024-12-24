@@ -10,6 +10,9 @@ College uniform classification system is a deep learning-based image classificat
 
 ## **Demeo Video**
 
+https://drive.google.com/file/d/1HTCkNh-OGO6Rrsdh5K-tRoF8TDNTH7SW/view?usp=sharing
+
+
 ----------------
 
 ## **Key Features**

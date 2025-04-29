@@ -16,7 +16,7 @@ It leverages Convolutional Neural Networks (CNNs), transfer learning, and object
 
 
 
-https://drive.google.com/file/d/1ZpwJ53RtjXP2sRWwAGVXWcGE10V32XUN/view?usp=sharing
+https://github.com/user-attachments/assets/26761c41-fd23-438d-b51d-f9b7ffcac9cf
 
 
 ----------------
